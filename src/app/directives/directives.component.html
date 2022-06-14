@@ -1,0 +1,9 @@
+<button type="button" class="btn btn-primary" (click)="displayDetail()">Display details</button>
+<div *ngIf="firstClick">
+    <p *ngIf="showDetails; else toggle">Details...</p>
+    <ng-template #toggle>
+        <p>Details hidden</p>
+    </ng-template>
+</div>
+<p [ngClass]="{'blue':isBlue}">You clicked {{clickNum}} times</p>
+

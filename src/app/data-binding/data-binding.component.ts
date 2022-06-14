@@ -16,5 +16,4 @@ export class DataBindingComponent implements OnInit {
   deleteUsername():void{
     this.username = ""
   }
-
 }
